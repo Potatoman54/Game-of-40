@@ -334,7 +334,7 @@ class a_game_menu(QMainWindow, Ui_a_game_menu):
 
             self.a_game_menu_player_dicescore.setText(str(a_round_value + old_dice_value))
 
-            if a_round_value + old_dice_value >= 10:
+            if a_round_value + old_dice_value >= 40:
                 self.go_to_win_menu("player")
                 global player_wins
                 player_wins = player_wins + 1
